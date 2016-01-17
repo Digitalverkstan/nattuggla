@@ -1,0 +1,30 @@
+# Nattuggla
+
+Ett enkelt projekt där en Arduino i form av ett djur reagerar på att omgivningens ljus slocknar genom att lysa med ögonen. Ett bra första projekt med lite kod, lite elektronik och lite detektivarbete.
+
+### Använder:
+
+ - Arduino, programmering
+ - LED & Resistor
+ - LDR (Light Dependent Resistor, fotoresistor)
+ - Prototyping
+
+### Beskrivning
+
+Ugglor är vakna på natten, och när en uggla är vaken lyser ögonen. Med hjälp av en arduino och lite elektronikkomponenter kan du få din uggla att lysa med ögonen när det blir mörkt.
+
+### Bygg, del 1
+Bygg ihop kretsen enligt schemat. Kom ihåg vilka portar (hål) på arduinon som används, och var noga med de sladdar som går till 5V och GND (jord).
+
+Starta en ny sketch i Arduino, skapa två variabler av typen `int` som pekar på portarna för LEDs och fotoresistorn
+
+    int led = 5; // led betyder nu 5
+    int ldr = 0;
+
+Testa att lysdioderna fungerar genom att slå på dem i `loop()`-metoden
+
+    void loop() {
+        digitalWrite(led, HIGH);
+    }
+
+Skicka till Arduinon och Lysdioderna bör nu lysa.
