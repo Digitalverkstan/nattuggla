@@ -17,6 +17,8 @@ Ugglor är vakna på natten, och när en uggla är vaken lyser ögonen. Med hjä
 
 Bygg ihop kretsen enligt schemat. Kom ihåg vilka portar (hål) på arduinon som används, och var noga med de sladdar som går till 5V och GND (jord). Det finns två resistorer i kretsen, en på ca 220 ohm för lysdioderna och en på 10k ohm som tillhör fotoresistorn. Var noga med att använda rätt resistor på rätt ställe, 10k ohm är 50x så starkt som 220 ohm. På ritningen ser resistorerna lika stora ut, men den starka är mycket mindre än den svaga i verkligheten.
 
+![Kretsen med en större breadboard](https://github.com/kirayatail/nattuggla/blob/master/img/circuit.png?raw=true)
+
 Starta en ny sketch i Arduino, skapa två variabler av typen `int` som pekar på portarna för LEDs och fotoresistorn.
 
     int led = 5; // led betyder nu 5
