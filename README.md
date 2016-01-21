@@ -117,6 +117,8 @@ Alltså, hämta siffran från fotoresistorn, (skriv ut värdet på serieporten) 
 
 Skicka till arduinon och testkör. När du håller handen över fotoresistorn borde lysdioderna börja lysa, och när du tar bort handen igen ska de slockna. Om de inte lyser alls så är det nog fel på lysdiodernas koppling, kolla alla sladdar. Lyser de hela tiden så är någonting fel med fotoresistorns koppling, eller så är något fel i koden.
 
+Så här såg det ut när jag testade: [Youtube | Nattuggla - tekniktest](https://youtu.be/1h7r24lY40s)
+
 ### Bygg, del 2
 
 När det tekniska fungerar är det dags att bygga färdigt ugglan. Använd wellpapp och vitt papper, rita en uggla (eller använd mallen) och fäst på wellpappen. Gör sedan två små hål i ögonen och stick in lysdioderna bakifrån. Försök att böja till fotodioden så att den ligger ner längs med ugglans rygg. Provkör igen.
