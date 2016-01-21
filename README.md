@@ -100,6 +100,7 @@ if-blocket kan jämföra två siffror och säga om det är sant eller falskt att
 Och nu är det bara att smälta ihop vad vi vet om fotoresistorns siffror och hur if-blocket kan jämföra mellan värden, stoppa sedan in det istället för "Det är mörkt" i koden ovan.
 
     int value = analogRead(ldr);
+    Serial.println(value);
 
     if(value < 600) {
         digitalWrite(led, HIGH);
@@ -107,4 +108,15 @@ Och nu är det bara att smälta ihop vad vi vet om fotoresistorns siffror och hu
         digitalWrite(led, LOW); // LOW släcker dioderna
     }
 
-Alltså, hämta siffran från fotoresistorn, och jämför med gränsen mellan mörkt och ljust. I mitt fall när jag testade så var 800 ljust och 200 mörkt, alltså borde det vara mörkt under 600.
+Alltså, hämta siffran från fotoresistorn, (skriv ut värdet på serieporten) och jämför med gränsen mellan mörkt och ljust. I mitt fall när jag testade så var 800 ljust och 200 mörkt, alltså borde det vara mörkt under 600.
+
+Skicka till arduinon och testkör. När du håller handen över fotoresistorn borde lysdioderna börja lysa, och när du tar bort handen igen ska de slockna. Om de inte lyser alls så är det nog fel på lysdiodernas koppling, kolla alla sladdar. Lyser de hela tiden så är någonting fel med fotoresistorns koppling, eller så är något fel i koden.
+
+### Bygg, del 2
+
+När det tekniska fungerar är det dags att bygga färdigt ugglan. Använd wellpapp och vitt papper, rita en uggla (eller använd mallen) och fäst på wellpappen. Gör sedan två små hål i ögonen och stick in lysdioderna bakifrån. Försök att böja till fotodioden så att den ligger ner längs med ugglans rygg. Provkör igen.
+
+Nu när ugglan är monterad så kanske man behöver göra nya mätningar på hur mycket ljus som kommer fram till fotodioden, öppna "Serial Monitor" och gör nya mätningar precis som innan.
+Om det behövs får du ändra i koden för att ugglan ska fungera bättre. Tips: Du får ännu bättre mätningar om du tänder och släcker ljuset i rummet, eftersom det är rummets lampor den ska reagera på egentligen.
+
+Klart! Bra jobbat!
