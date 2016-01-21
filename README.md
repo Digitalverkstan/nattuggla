@@ -61,6 +61,8 @@ Sedan ser vi till att arduinon hela tiden skickar talet som vi läser in från a
 
 Skicka programmet till arduinon och öppna det som heter "Serial Monitor" (knappen till höger ovanför koden i arduino-fönstret). Nu ska en stor vit ruta dyka upp med en massa siffror som rullar. Siffrorna är det som arduinon får från fotoresistorn.
 
+![Exempel på Serial Monitor](https://github.com/kirayatail/nattuggla/blob/master/img/serialmonitor.png?raw=true)
+
 Prova att skugga fotoresistorn med handen och se om siffrorna ändrar sig. Om det hela tiden står samma sak (exempelvis 0 eller 1023) så är någonting fel med kretsen, kolla alla sladdar och komponenter! Normalt sett borde värdet minska eller öka med ett par hundratal, exempelvis från 300 till 700 eller tvärtom när man ökar eller minskar ljuset. Skriv ner ungefär vad det blir när det är ljust, och vad det blir när det blir mörkt.
 
 ### Ändra i koden
